@@ -13,7 +13,7 @@ public class MyRestfulApi {
     @Autowired
     private com.example.vote_system.service.createVoter createVoter;
     @PostMapping("/vote")
-    public ResponseEntity voteAccepter(@RequestBody SendResult sendResult){
+    public ResponseEntity<String> voteAccepter(@RequestBody SendResult sendResult){
         createVoter.vote(sendResult);
         if(createVoter.vote(sendResult)>0){
             return ResponseEntity.status(HttpStatus.ACCEPTED).body("投票成功");
@@ -28,7 +28,7 @@ public class MyRestfulApi {
     }
     @PostMapping("/addvoteselect")
 
-    public ResponseEntity addNewCandidate(@RequestBody Map<String,String> newCandidate){
+    public ResponseEntity<String> addNewCandidate(@RequestBody Map<String,String> newCandidate){
         createVoter.addcandidate(newCandidate);
         if(createVoter.addcandidate(newCandidate)>0){
             return ResponseEntity.status(HttpStatus.ACCEPTED).body("新增一筆投票項目");
@@ -36,7 +36,7 @@ public class MyRestfulApi {
 
     }
     @DeleteMapping("/deletvoteselect")
-    public ResponseEntity removeCandidate(@RequestBody Map<String,String> removeCandidate){
+    public ResponseEntity<String> removeCandidate(@RequestBody Map<String,String> removeCandidate){
         createVoter.removecandidate(removeCandidate);
         if(createVoter.addcandidate(removeCandidate)>0){
             return ResponseEntity.status(HttpStatus.ACCEPTED).body("移除投票項目");
