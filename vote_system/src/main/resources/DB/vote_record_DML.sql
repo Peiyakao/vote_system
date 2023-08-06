@@ -1,0 +1,10 @@
+INSERT INTO `mydb`.`voting_record` (`id`, `votingName`, `votingItem`) VALUES ('1', 'Amy', '1');
+INSERT INTO `mydb`.`voting_record` (`id`, `votingName`, `votingItem`) VALUES ('2', 'Jelly', '3');
+INSERT INTO `mydb`.`voting_record` (`id`, `votingName`, `votingItem`) VALUES ('3', 'King', '4');
+INSERT INTO `mydb`.`voting_record` (`id`, `votingName`, `votingItem`) VALUES ('4', 'Jonnas', '3');
+INSERT INTO `mydb`.`voting_record` (`id`, `votingName`, `votingItem`) VALUES ('5', 'Josherf', '3');
+INSERT INTO `mydb`.`voting_record` (`id`, `votingName`, `votingItem`) VALUES ('6', 'Jojo', '2');
+INSERT INTO `mydb`.`voting_record` (`id`, `votingName`, `votingItem`) VALUES ('7', 'Ellen', '9');
+INSERT INTO `mydb`.`voting_record` (`id`, `votingName`, `votingItem`) VALUES ('8', 'Sally', '8');
+INSERT INTO `mydb`.`voting_record` (`id`, `votingName`, `votingItem`) VALUES ('9', 'Watame', '5');
+INSERT INTO `mydb`.`voting_record` (`id`, `votingName`, `votingItem`) VALUES ('10', 'Usada', '6');
